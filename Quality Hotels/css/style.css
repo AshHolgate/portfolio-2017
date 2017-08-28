@@ -1,0 +1,467 @@
+/*********** UNIVERSAL STYLES **********/
+
+html {
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1920px;
+  margin: 0 auto;
+  /*border-left: solid 10px black;
+  border-right: solid 10px black;
+  border-bottom: solid 10px black;*/
+}
+
+.ten-pix-black-bar {
+  background-color: black;
+  width: 100%;
+  /*height: 10px;*/
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+/*********** HERO STYLES **********/
+ .top-bar {
+   background-color: black;
+   width: 100%;
+   /*height: 10px;*/
+ }
+
+ .hero {
+   height: calc(100vh);
+   min-height: 600px;
+   max-height: 900px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-image: url('../img/hero.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+ }
+
+ .logo {
+   width: 100px;
+   margin: 30px;
+   border-top: 1px black solid;
+   border-left: 1px black solid;
+ }
+
+.hero-bar-container {
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.hero-bar-text-top,
+.hero-bar-text-bottom {
+  text-shadow: 2px 2px 2px black;
+  font-weight: 100;
+}
+
+.hero-bar-text-top {
+  margin: 15px 0 0 0;
+  font-size: 1.6em;
+}
+
+.hero-bar-text-bottom {
+  font-family: 'Alex Brush', serif;
+  font-size: 3em;
+  margin: 0 0 10px 0;
+}
+
+
+
+
+/*********** HERO PLANE STYLES **********/
+.hero-plane {
+   height: calc(100vh);
+   min-height: 600px;
+   max-height: 750px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-image: url('../img/plane.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+ }
+
+ .hero-plane-bar-container {
+   background-color: rgba(0,0,0,0);
+   text-align: center;
+   color: white;
+   margin: 0 auto;
+   margin-bottom: 50px;
+   width: 90%;
+   max-width: 350px;
+ }
+
+ .hero-plane-bar-container h1 {
+   text-shadow: none;
+   font-weight: 500;
+   font-size: 2em;
+   margin-bottom: 10px;
+ }
+
+ .hero-plane-bar-container input {
+   color: grey;
+   width: 80%;
+   font-weight: 500;
+   font-size: 1.5em;
+   text-align: center;
+   border: 1px black solid;
+   border-radius: 5px;
+   box-shadow: inset 2px 2px 2px rgba(0,0,0,0.25);
+ }
+
+
+
+
+/*********** MAIN BODY STYLES **********/
+
+.secondary-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: justify;
+  line-height: 200%;
+}
+
+.secondary-container h1 {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.who {
+  background-image: url('../img/london.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 0 10%;
+  /*border-bottom: black 10px solid;*/
+}
+
+.what {
+  background-image: url('../img/rome.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 0 10%;
+  /*border-bottom: black 10px solid;*/
+}
+
+.tertiary-container {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-align: justify;
+  background-image: url('../img/beach-feet.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 450px;
+}
+
+.tertiary-container h1 {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 6px;
+  font-size: 1.4em;
+  background-color: white;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+  /*border-bottom: black 10px solid;*/
+  background-color: white;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.client-quote-box:last-child {
+  margin-bottom: 10px;
+}
+
+.client-quote-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.clients .quote {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.stars {
+  width: 110px;
+  align-self: center;
+}
+
+.question {
+  text-align: center;
+  font-weight: 600;
+}
+
+.button {
+  display: block;
+  width: 140px;
+  height: 50px;
+  margin: 0 auto;
+  transition: 0.5s;
+  color: black;
+  background-color: #ffd96e;
+  /*box-shadow: 3px 3px rgba(0,0,0,1);*/
+}
+
+.button:hover {
+  background-color: white;
+  box-shadow: none;
+}
+
+.button a {
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 6px;
+}
+
+.spacer {
+  height: 180px;
+}
+
+#sort-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ddd;
+  margin: 0;
+  flex-basis: 25%;
+  flex-grow: 1;
+}
+
+#ascending {
+  padding: 10px 20px;
+  margin: 0;
+  text-align: right;
+  flex-basis: 50%;
+  color: black;
+  transition: 0.5s;
+}
+
+#descending {
+  padding: 10px 20px;
+  margin: 0;
+  flex-basis: 50%;
+  color: black;
+  transition: 0.5s;
+}
+
+#ascending:hover,
+#descending:hover {
+  background-color: white;
+}
+
+/*********** HOTEL CHOICE STYLES **********/
+.hotel-choice-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0 20px;
+  margin-bottom: 20px;
+  min-height: 100vh;
+}
+
+.hotel-choice-container-2 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.hotel-choice {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 10px;
+  background-color: #f9f9fb;
+}
+
+.hotel-name {
+  margin: 10px 0 0 0;
+}
+
+.hotel-city {
+  margin: 0 0 5px;
+  text-transform: uppercase;
+}
+
+.hotel-stars {
+  width: 100px;
+
+}
+
+.hotel-info {
+  padding: 10px 5px;
+  margin-top: 10px;
+  border-top: 1px #ccc solid;
+  border-bottom: 1px #ccc solid;
+  text-align: justify;
+  line-height: 2;
+}
+
+.hotel-price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.hotel-price-container h3 {
+  margin: 30px 0 10px;
+}
+
+.book-button {
+  background-color: #ffd96e;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.2em;
+  color: black;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.book-button:hover {
+  background-color: white;
+}
+
+.hotel-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+/*********** MEDIA QUERIES **********/
+
+@media (min-width: 450px) {
+  .tertiary-container {
+    background-size: contain;
+  }
+}
+
+@media (min-width: 550px) {
+  .spacer {
+    height: 250px;
+  }
+}
+
+@media (min-width: 650px) {
+  .logo {
+    width: 150px;
+    margin: 50px;
+  }
+
+  .tertiary-container {
+    background-image: url(../img/beach-feet-cropped.jpg);
+    background-size: cover;
+  }
+
+  .tertiary-container h1 {
+    background-color: transparent;
+  }
+
+  .secondary-container {
+    flex-direction: row;
+  }
+
+  .who {
+    /*border-right: black 5px solid;*/
+    padding: 0 5%;
+  }
+
+  .what {
+    /*border-left: black 5px solid;*/
+    padding: 0 5%;
+  }
+
+  .clients {
+    background-color: transparent;
+    border-bottom: none;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  .client-quote-box {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 10px;
+    margin: 10px;
+    align-self: center;
+  }
+
+  .tertiary-container {
+    background-size: cover;
+  }
+
+  .tertiary-container h1 {
+    padding: 15px 0 0 0;
+  }
+
+  .question p {
+    font-size: 1.4em;
+  }
+  .right {
+    align-self: flex-end;
+    text-align: right;
+  }
+
+  .left {
+    align-self: flex-start;
+  }
+
+  .spacer {
+    height: 400px;
+  }
+
+  .hotel-choice {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 10px;
+    background-color: #f9f9fb;
+  }
+}
+
+@media (min-width: 950px) {
+  .hotel-choice {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1500px){
+  .hotel-choice {
+    width: 23.5%;
+  }
+}

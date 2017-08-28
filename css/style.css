@@ -1,0 +1,350 @@
+
+/*------UNIVERSAL STYLES------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 0 auto;
+}
+
+nav {
+  z-index: 1;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+p a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+p a:hover {
+
+}
+
+
+
+
+/*------NAVIGATION STYLES------*/
+
+#logo {
+  display: block;
+  margin: 20px auto;
+  margin-top: 0;
+  width: 100%;
+  max-width: 250px;
+}
+
+.NAVIGATION {
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+
+.nav-list {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: rgba(0,0,0,1);
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  list-style: none;
+  margin: 5px 0px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5em;
+}
+
+.focus {
+  font-weight: 600;
+}
+
+.nav-list:hover {
+    color: rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+/*------MAIN BODY STYLES------*/
+
+.body-container {
+  width: 100%;
+  background-color: #efefef;
+  min-height: calc(100vh - 290px);
+}
+
+.button-container {
+  width: 230px;
+  height: 35px;
+  margin: 0 auto;
+  border: white 2px solid;
+  margin-bottom: 20px;
+  align-self: flex-end;
+  background: rgba(0,0,0,0.7);
+  box-shadow: 5px 5px rgba(0,0,0,0.75);
+}
+
+.button-container:hover,
+.button-container:focus {
+  opacity: 0.8;
+}
+
+.main-button-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
+.main,
+.secondary {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.1em;
+  line-height: 150%;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondary {
+  padding-bottom: 40px;
+}
+
+.title {
+  padding-top: 20px;
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+.headshot {
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/ashton/ash-wood-background-cropped.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px transparent solid;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  font-size: 1.1em;
+  margin: 0 auto;
+}
+
+.project-selection {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  text-decoration: none;
+  border: black 2px solid;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.project-selection:hover {
+  filter: grayscale(0%);
+}
+
+.project-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.project-link {
+  height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  background: rgba(0,0,0,0.5);
+  align-self: flex-end;
+  margin-top: 350px;
+}
+
+.portfolio {
+  background-image: url("../img/projects/portfolio/quality-hotels.jpg");
+  background-size: 660px;
+  background-position: top left;
+}
+
+p {
+  width: 100%;
+  margin-top: 0;
+}
+
+.skills {
+  padding-top: 20px;
+  list-style: none;
+  display: block;
+  font-size: 1.2em;
+}
+
+.skill-list {
+  justify-content: center;
+  flex-grow: 1;
+  padding-bottom: 20px;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.7em;
+  text-align: center;
+  display: block;
+}
+
+/*------FOOTER STYLES------*/
+
+footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: grey;
+  height: 60px;
+}
+
+.footer {
+  width: auto;
+  margin: 20px;
+}
+
+
+
+
+/*------MEDIA QUERIES------*/
+
+@media (min-width: 768px) {
+
+  nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .body-container {
+    padding-top: 120px;
+    min-height: calc(100vh - 60px);
+  }
+
+  .button-container {
+    align-self: center;
+    margin: 0 auto 0 auto;
+    width: 300px;
+    height: 40px;
+  }
+
+.button {
+  font-size: 2em;
+}
+
+  .logo {
+    max-width: 100%;
+    width: 250px;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 20px;
+    list-style: none;
+  }
+
+  .NAVIGATION {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-bottom: 0;
+    align-items: center;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1000px;
+  }
+
+  .headshot {
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/ashton/ash-wood-background.png");
+    background-color: black;
+    background-size: 2000px;
+    background-position: center bottom -320px;
+    background-repeat: no-repeat;
+  }
+
+  .nav-list {
+    font-size: 1.1em;
+    padding-left: 20px;
+  }
+
+  .about-me {
+    width: 45%;
+  }
+
+  .secondary {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .skill-list {
+    justify-content: space-between;
+    width: 100px;
+    margin: 0 auto;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+@media (min-width: 900px) {
+  .nav-list {
+    padding-right: 20px;
+  }
+
+  .about-me {
+    width: 60%;
+  }
+}
