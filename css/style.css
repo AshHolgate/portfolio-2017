@@ -31,10 +31,6 @@ p a {
   font-weight: 600;
 }
 
-p a:hover {
-
-}
-
 
 
 
@@ -87,7 +83,7 @@ p a:hover {
 .body-container {
   width: 100%;
   background-color: #efefef;
-  min-height: calc(100vh - 290px);
+  min-height: calc(135vh - 290px);
 }
 
 .button-container {
@@ -196,7 +192,7 @@ p a:hover {
 
 .portfolio {
   background-image: url("../img/projects/portfolio/quality-hotels.jpg");
-  background-size: 660px;
+  background-size: 650px;
   background-position: top left;
 }
 
@@ -258,7 +254,7 @@ footer {
 
   .body-container {
     padding-top: 120px;
-    min-height: calc(100vh - 60px);
+    min-height: calc(125vh - 60px);
   }
 
   .button-container {

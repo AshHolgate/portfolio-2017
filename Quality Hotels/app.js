@@ -59,7 +59,7 @@ try {
       }
       if (searchSuccessful === false) {
         basicModal.show({
-          body: '<p>Unfortunately, we only have hotels in London, Paris, Rome, and Barcelona. Please search for one of these cities</p>',
+          body: '<p>Unfortunately, we only have hotels in London, Paris, Rome, and Barcelona. Please search for one of these cities.</p>',
           buttons: {
             action: {
               title: 'OK',

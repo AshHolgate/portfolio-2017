@@ -53,7 +53,6 @@ p {
    background-image: url('../img/hero.jpg');
    background-repeat: no-repeat;
    background-position: center;
-   background-attachment: fixed;
    background-size: cover;
  }
 
@@ -102,7 +101,6 @@ p {
    background-image: url('../img/plane.jpg');
    background-repeat: no-repeat;
    background-position: center;
-   background-attachment: fixed;
    background-size: cover;
  }
 
@@ -457,6 +455,11 @@ p {
 @media (min-width: 950px) {
   .hotel-choice {
     width: 30%;
+  }
+
+  .hero,
+  .hero-plane {
+    background-attachment: fixed;
   }
 }
 
