@@ -83,7 +83,7 @@ p a {
 .body-container {
   width: 100%;
   background-color: #efefef;
-  min-height: calc(135vh - 290px);
+  min-height: calc(100vh - 290px);
 }
 
 .button-container {
@@ -160,14 +160,15 @@ p a {
 
 .project-selection {
   width: 100%;
-  max-width: 400px;
-  height: 400px;
+  max-width: 350px;
+  height: 350px;
   margin: 0 auto;
   text-decoration: none;
   border: black 2px solid;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
   filter: grayscale(100%);
   transition: 0.5s;
+  margin-bottom: 20px;
 }
 
 .project-selection:hover {
@@ -254,7 +255,7 @@ footer {
 
   .body-container {
     padding-top: 120px;
-    min-height: calc(125vh - 60px);
+    min-height: calc(100vh - 60px);
   }
 
   .button-container {

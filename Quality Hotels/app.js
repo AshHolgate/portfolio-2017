@@ -46,7 +46,7 @@ try {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     // fix data search to include,and search for, full strings as opposed to characters. Use .split() method to split string by commas.
-    let text = input.value.toLowerCase();
+    let text = input.value.toLowerCase().trim();
     let searchSuccessful = false;
       for (let i = 0; i < hotelName.length; i++) {
         let data = hotelName[i].getAttribute('data-hotelData').split(',');
