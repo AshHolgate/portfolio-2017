@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url('http://biteinto.info/wp-content/uploads/2016/02/seamless-wood-texture-and-seamless-wood-texture-images-crazy-gallery-11.jpg');
+  background-size: fill;
+  background-position: center;
+}
+
+.spacer {
+  width: 100%;
+  height: 20px;
+}
+
+.spacer10 {
+  width: 100%;
+  height: 10px;
+}
+
+.spacer0 {
+  width: 100%;
+  height: 0.1px;
+}
+
+#calculator {
+  display: block;
+  width: 270px;
+  margin: 50px auto;
+  background: linear-gradient(#333, #555);
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: inset 0 0 20px rgba(200, 200, 200, 1),
+    1px 1px 0 rgba(100, 100, 100, 1),
+    2px 2px 0 rgba(90, 90, 90, 1),
+    3px 3px 0 rgba(80, 80, 80, 1),
+    4px 4px 0 rgba(70, 70, 70, 1),
+    5px 5px 0 rgba(60, 60, 60, 1),
+    5px 5px 20px rgba(0, 0, 0, 1);
+}
+
+.button {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, #333, #555);
+  border: 1px #555 solid;
+  border-radius: 5px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 1), inset 0 0 2px rgba(200, 200, 200, 0.5);
+}
+
+.button:hover {
+  background: radial-gradient(circle, #333, #666);
+}
+
+button:focus {
+  box-shadow: inset 0 0 2px rgba(200, 200, 200, 0.5);
+  outline: none;
+  background: radial-gradient(circle, #333, #666);
+}
+
+#output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 40px;
+  margin: 0 20px 20px;
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 20px rgba(0, 0, 0, 0.5),
+    0 0 5px rgba(200, 200, 200, 0.5);
+}
+
+#buttons {
+  display: flex;
+  margin: 20px;
+}
+
+#button-collection-left {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  margin-right: 10px;
+}
+
+#button-collection-right {
+  width: 50px;
+  height: 300px;
+}
+
+#button-row-1, #button-row-2, #button-row-3, #button-row-4, #button-row-5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#button-column-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 290px;
+}
+
+#zero {
+  width: 110px;
+}
+
+#equal {
+  height: 170px;
+}
