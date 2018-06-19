@@ -47,6 +47,7 @@ p a {
 .NAVIGATION {
   padding-left: 0;
   padding-bottom: 20px;
+  margin-top: 20px;
 }
 
 .nav-list {
